@@ -11,7 +11,7 @@ body {
 
 .container {
   background: #E0C7A3;
-  height: 100%;
+  min-height: 900px;
 }
 
 #details {
