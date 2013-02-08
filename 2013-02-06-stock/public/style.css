@@ -1,0 +1,17 @@
+@import url(http://fonts.googleapis.com/css?family=Archivo+Black);
+@import url(http://fonts.googleapis.com/css?family=Tenor+Sans);
+
+body {
+  background: url('images/bar.jpg') repeat-x;
+  font-family: 'Tenor Sans', sans-serif;
+}
+
+header {
+  font-size: 100px;
+  font-family: 'Archivo Black', sans-serif;
+}
+
+footer {
+  margin-top: 50px;
+  font-size: 9px
+}

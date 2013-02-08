@@ -1,0 +1,43 @@
+@import url(http://fonts.googleapis.com/css?family=Didact+Gothic&subset=latin,cyrillic);
+
+* {
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+body {
+  background: #E5DFCA;
+  color: #61748C;
+}
+
+.container {
+  background: #E0C7A3;
+  height: 100%;
+}
+
+#details {
+  font-size: 25px;
+}
+
+.thumbnail {
+  background: #A69D89;
+}
+
+.thumbnail img {
+  border-radius: 2px;
+}
+
+.row {
+  margin-bottom: 20px
+}
+
+#twitter {
+  height: 30px;
+  width: auto;
+  position: relative;
+  right: 5px;
+}
+
+#fb {
+  height: 20px;
+  width: auto;
+}

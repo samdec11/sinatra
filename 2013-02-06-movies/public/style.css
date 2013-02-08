@@ -1,0 +1,114 @@
+@import url(http://fonts.googleapis.com/css?family=Emblema+One);
+@import url(http://fonts.googleapis.com/css?family=Rambla:400,700,400italic);
+
+html, body {
+  height: 100%;
+}
+
+* {
+  color: #f2f0d8;
+}
+
+body {
+  background: #402224;
+  font-family: 'Rambla', sans-serif;
+}
+
+/* navigation bar */
+nav {
+  background: rgba(107, 242, 229, 0.7);
+  position: fixed;
+  top:  0px;
+  z-index: 1;
+  width: 100%;
+  padding-top: 15px;
+  -webkit-box-shadow: 0px 0px 8px 0px #000000;
+}
+
+nav li {
+  display: inline;
+}
+
+nav a {
+  font-size: 20px;
+  padding: 0 40px;
+  color: #f2f0d8;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #8c7369;
+}
+
+/* search bar */
+form {
+  display: inline;
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  color: #8c7369;
+}
+
+button, input {
+  color: #8c7369;
+  background: #f2f0d8;
+  border-radius: 5px
+}
+
+button {
+  background: #402224;
+}
+
+header {
+  font: 100px 'Emblema One', cursive;
+}
+
+#wrap {
+  min-height: 100%;
+}
+
+#main {
+  overflow: auto;
+  padding-bottom: 40px;
+  margin: 40px 0 0 10px;
+  line-height: 30px;
+  font-size: 22px;
+}
+
+img {
+  float: left;
+  width: 300px;
+  margin: 0 20px 0 0;
+  border: 15px solid #bfb378;
+  border-radius: 10px;
+}
+
+span {
+  font-weight: bold;
+  color: #bfb378;
+}
+
+/* lists */
+ol li {
+  display: list-item;
+  list-style: decimal;
+  margin-left: 2em;
+}
+
+ol p {
+  margin-left: 3em;
+  margin-bottom: 1em
+}
+
+
+section > p {
+  margin-bottom: 1em
+}
+
+footer {
+  position: relative;
+  margin-top: -40px;
+  height: 40px;
+  clear: both;
+  font-size: 12px;
+}

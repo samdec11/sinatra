@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <title>SMMdb</title>
+    <link rel='stylesheet' href='/reset.css'>
+    <link rel='stylesheet' href='/style.css'>
+  </head>
+  <body>
+    <div id='wrap'>
+      <nav>
+          <ul>
+            <li><a href='/'>Home</a></li>
+            <li><a href='/movies'>Movies</a></li>
+            <li><a href='/about'>About</a></li>
+            <li><a href='/faq'>FAQ</a></li>
+          </ul>
+            <form action='/movie' method='get'>
+              <input type='text' name='title' autofocus>
+              <button>Search</button>
+            </form>
+      </nav>
+      <div id='main'>
+        <%= yield %>
+      </div>
+    </div>
+    <footer>(c) SM-M Productions</footer>
+  </body>
+</html>

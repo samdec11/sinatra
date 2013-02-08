@@ -1,0 +1,28 @@
+<section>
+  <% @rows.each do |row| %>
+  <div class='row'>
+    <div class='span4'>
+      <img src="<%= row['image'] %>" alt="<%= row['name'] %>">
+    </div>
+    <div class='span8'>
+      <div id='details'>
+        <ul class='unstyled'>
+          <li>
+            <%= row['name'] %>, <%= row['age'] %>, <%= row['gender'] %>
+          </li>
+          <li>
+            <a href='<% row['facebook'] %>' target='_blank'>
+              <img id='fb' src='/images/f_logo.jpg'>
+            </a>
+          </li>
+          <li>
+            <a href='<% row['twitter'] %>' target='_blank'>
+              <img id='twitter' src='/images/t_logo.jpg'>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <% end %>
+</section>

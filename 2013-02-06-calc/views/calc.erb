@@ -1,0 +1,18 @@
+<h1>CALCULATOR</h1>
+
+<form action='/calc' method='get'>
+  <input type='text' name='first'>
+  <input type='text' name='operator'>
+  <input type='text' name='second'>
+  <button>Calculate!</button>
+</form>
+
+<div class='num'>
+  <%= @first %>
+</div>
+<div class='num'>
+  <%= @second %>
+</div>
+<div class='num'>
+  <%= @result %>
+</div>

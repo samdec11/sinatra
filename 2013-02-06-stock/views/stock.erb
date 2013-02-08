@@ -1,0 +1,7 @@
+<header><h1>Stock Clock</h1></header>
+  <form action='/stock' method='get'>
+    <input type='text' name='symbol'>
+    <button>Fetch</button>
+  </form>
+
+  <%= @symbol %> is currently trading at $<%= @result %>
