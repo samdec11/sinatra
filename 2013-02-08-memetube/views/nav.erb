@@ -1,0 +1,9 @@
+<div id="memenav">
+  <ul class="nav nav-tabs nav-stacked">
+    <li><a href='/'>Home</a></li>
+    <li><a href='/new'>Add New</a></li>
+    <% @nav_rows.each do |row| %>
+      <li><a href='/<%= row['genre'] %>'><%= row['genre'] %></a></li>
+    <% end %>
+  </ul>
+</div>

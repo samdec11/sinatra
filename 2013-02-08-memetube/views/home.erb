@@ -1,0 +1,19 @@
+<% @rows.each do |row| %>
+  <div class="row">
+    <div class="media">
+      <a class="pull-left" href="#">
+        <iframe class ="media-object" width="560" height="315" src="<%= row['url'] %>" frameborder="0" allowfullscreen></iframe>
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading"><%= row['title'] %></h4>
+        <p><%= row['description'] %></p>
+        <p><a href='/<%= row['genre'] %>'><%= row['genre'] %></a></p>
+        <form action='/<%= row['id'] %>/edit' method='get'>
+        <button class="btn btn-small btn-inverse">Edit</button>
+        <form action='/<%= row['id'] %>/delete' method='post'>
+      <button class="btn btn-small btn-inverse">Delete</button>
+    </form>
+      </div>
+    </div>
+  </div>
+<% end %>

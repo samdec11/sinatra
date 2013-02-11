@@ -1,0 +1,49 @@
+@import url(http://fonts.googleapis.com/css?family=Sofia);
+@import url(http://fonts.googleapis.com/css?family=Elsie+Swash+Caps);
+
+header {
+  clear: both;
+  font: 36px 'Sofia', cursive;
+  background: #F2E3B3;
+  border-radius: 10px;
+}
+
+#memenav a {
+  background: #D95D30;
+  font: 20px 'Elsie Swash Caps', cursive;
+  color: #F2A950;
+  border-radius: 10px;
+}
+
+#memenav a:hover {
+  background: #F2E3B3;
+  color: #736C48;
+}
+
+body {
+  background: #736C48;
+}
+
+.row {
+  margin-bottom: 20px;
+}
+
+.media {
+  background: #D98032;
+  border-radius: 10px;
+}
+
+.media-body a {
+  color: #F2E3B3;
+}
+
+.media-body a:hover {
+  text-decoration: none;
+  color: #736C48;
+}
+
+form {
+  background: #D98032;
+  border-radius: 10px;
+  padding: 20px;
+}
