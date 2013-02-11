@@ -1,0 +1,15 @@
+body {
+  background: #59302C;
+  color: #D9C66A;
+}
+
+img {
+  height: 200px;
+  width: 200px;
+  display: block;
+}
+
+form {
+  margin: 0px;
+  float: left;
+}

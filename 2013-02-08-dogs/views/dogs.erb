@@ -1,7 +1,19 @@
 <% @rows.each do |row| %>
   <section>
-    <%= row['name'] %>
-    <%= row['breed'] %>
-    <img src="<%= row['photo'] %>">
+    <form action='/dogs/<%= row['id'] %>/delete' method='post'>
+      <button>Delete</button>
+    </form>
+    <form action='/dogs/<%= row['id'] %>/edit' method='get'>
+      <button>Edit</button>
+    </form>
+
+    <div class="media">
+      <a class="pull-left" href="#">
+        <img class="media-object" src="<%= row['photo'] %>">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading"><%= row['name'] %> the <%= row['breed'] %></h4>
+      </div>
+    </div>
   </section>
 <% end %>

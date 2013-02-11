@@ -1,14 +1,14 @@
-
-
 <table>
   <tr>
-    <th>Number</th>
     <th>Date</th>
     <th>Task</th>
     <th>Description</th>
   </tr>
-    <th><%= @rows.values[0] %></th>
-    <th><%= @rows.values[1] %></th>
-    <th><%= @rows.values[2] %></th>
-    <th><%= @rows.values[3] %></th>
+<% @rows.each do |row| %>
+  <tr>
+    <td><%= row['post_date'] %> </td>
+    <td><%= row['title'] %> </td>
+    <td><%= row['description'] %> </td>
+  </tr>
+<% end %>
 </table>

@@ -5,8 +5,27 @@ require 'active_support/all'
 require 'pg'
 
 before do
-  sql = "select distinct breed from dogs"
+  sql = "select distinct breed from dogs order by breed"
   @nav_rows = run_sql(sql)
+end
+
+get '/dogs/:dog_id/edit' do
+  sql = "select * from dogs where id = #{params['dog_id']}"
+  rows = run_sql(sql)
+  @row = rows.first
+  erb :new
+end
+
+post '/dogs/:dog_id' do
+  sql = "update dogs set name='#{params['name']}', photo='#{params['photo']}', breed='#{params['breed']}' where id=#{params['dog_id']} "
+  run_sql(sql)
+  redirect to('/dogs')
+end
+
+post '/dogs/:dog_id/delete' do
+  sql = "delete from dogs where id = #{params['dog_id']}"
+  run_sql(sql)
+  redirect to('/dogs')
 end
 
 get '/dogs/:breed' do
@@ -25,7 +44,7 @@ get '/new' do
 end
 
 get '/dogs' do
-  sql = "select * from dogs"
+  sql = "select * from dogs order by name"
   @rows = run_sql(sql)
   erb :dogs
 end
